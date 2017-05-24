@@ -1,0 +1,30 @@
+function b=n_shuffle(a,n)
+r=randi(12,n,1);
+for k=1:n
+    if(r(k)==1)
+        a=rotate_U(a);
+    elseif(r(k)==2)
+        a=rotate_CU(a);
+    elseif(r(k)==2)
+        a=rotate_CU(a);
+    elseif(r(k)==3)
+        a=rotate_F(a);
+    elseif(r(k)==4)
+        a=rotate_CF(a);
+    elseif(r(k)==5)
+        a=rotate_B(a);
+    elseif(r(k)==6)
+        a=rotate_CB(a);
+    elseif(r(k)==7)
+        a=rotate_R(a);
+    elseif(r(k)==8)
+        a=rotate_CR(a);
+    elseif(r(k)==9)
+        a=rotate_L(a);
+    elseif(r(k)==10)
+        a=rotate_CL(a);
+    elseif(r(k)==11)
+        a=rotate_D(a);
+    elseif(r(k)==12)
+        a=rotate_CU(a);
+end
